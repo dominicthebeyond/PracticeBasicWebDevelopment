@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Doc 1</title>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive -->
+    <title>Newsletter Sign-Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Links the CSS file -->
 </head>
 <body>
-    
+    <div class="form-container">
+        <h2 class="form-header">Sign Up for Our Newsletter</h2>
+        
+        <!-- Form for user input -->
+        <form id="newsletter-form">
+            <!-- Email input field -->
+            <div class="form-inputs">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <!-- Submit button -->
+            <div class="form-inputs">
+                <input type="submit" value="Subscribe">
+            </div>
+        </form>
+        
+        <!-- Placeholder for success message -->
+        <p id="success-message" style="display: none; color: green;">Thank you for signing up!</p>
+    </div>
+
+    <script src="script.js"></script> <!-- Links the JavaScript file -->
 </body>
 </html>
