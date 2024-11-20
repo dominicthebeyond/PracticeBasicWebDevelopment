@@ -37,28 +37,37 @@ class DifferentReviews:
 
         # -- Section 1.1 --
 
+        score = 0
+
         a = 10
         b = 9.99
         c = "$9.99"
         d = True
 
-        print(f"This is an integer: {a}")
-        print(f"This is a float: {b}")
-        print(f"This is a string: {c}")
-        print(f"This is a boolean: {d}")
+        print(f"\n\n This is an interactive mini-game. It covers different data types! \n\n Choose a data type {name} to begin!")
 
-        userInput = input("Choose your poison: (a, b, c, d) ")
+        print(f"\n This is an integer: {a}")
+        print(f"\n This is a float: {b}")
+        print(f"\n This is a string: {c}")
+        print(f"\n This is a boolean: {d}")
+
+        userInput = input("\n Choose your poison: (a, b, c, d) ")
 
         if userInput.lower() == "a":
-            print(a)
+            print(f"{a} || This is an integer") 
         elif userInput.lower() == "b":
-            print(b)
+            print(f"{b} || This is a floating point number")
         elif userInput.lower() == "c":
-            print(c)
+            print(f"{c} || This is a string")
         elif userInput.lower() == "d":
-            print(d)
+            print(f"{d} || This is a boolean")
         else:
             print(f"{name} choose one of the 4 options from the input question.")
+        
+        print("\n\n Ok the quiz is finished [for now ;) ]")
+        print(f" Thanks for playing {name}!")
+
+        score = 0
     
     @staticmethod
     def sectionOneTwoReview():
@@ -123,13 +132,13 @@ class DifferentReviews:
         else: 
             print(f"\n Make sure {name} you're writing your answer as a letter option (ex: a, b, c, d)")
 
-        userInput4 = input(f"\n   -- Q5 -- \n\n ({name}, We're going to be doing some code! \n It will be plug and play, so follow along closely {name}. \n\n {name}, how would you concatinate this input value from an integer to a string? \n\n Here's the code: \n age = input('what is your age? ') \n \n print(______Your Answer_______) \n\n Options: \n\n A) | f'*curly brace* age variable *curly brace*'  \n B) | str(age)  \n C) | 'age'  \n D) | ' + age + '  \n\n Write your answer in multiple choice letter format.) ")
+        userInput4 = input(f"\n   -- Q5 -- \n\n ({name}, how would we concatinate these two string values? \n\n Here's The Code: \n\n name = {name} \n\n age = number \n\n print(______Your Answer______) \n\n Options: \n ----------------- \n \n A) | print(name + str(age)) \n B) | print(name + number) \n C) | print(name + 'number') \n D) | print('name' + 'number') \n\n {name}, make sure your answer is one of the letter choices provided (ex: a, b, c, d).) ")
 
         if userInput4.lower() == "a":
-            print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
-        elif userInput4.lower() == "b":
-            print(f"\n Correct!")
+            print("\n Correct!")
             score += 1
+        elif userInput4.lower() == "b":
+            print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
         elif userInput4.lower() == "c":
             print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
         elif userInput4.lower() == "d":
@@ -146,7 +155,33 @@ class DifferentReviews:
     
     @staticmethod
     def sectionOneThreeReview():
-        userInput = input(f"Choose your poison {name}: (a, b, c, d) ")
+
+        score = 0
+
+        print(f"\n Ok {name}, \n Today were going to be reviewing type casting [which is morphing data types into different data types.]: ")
+
+        print("\n Let's begin! ")
+
+        userInput0 = input(f"\n   -- Q1 -- \n\n ({name}, We're going to be doing some code! \n It will be plug and play, so follow along closely {name}. \n\n {name}, how would you concatinate this input value from an integer to a string? \n\n Here's the code: \n age = input('what is your age? ') \n \n print(______Your Answer_______) \n\n Options: \n\n A) | f'*curly brace* age variable *curly brace*'  \n B) | str(age)  \n C) | 'age'  \n D) | ' + age + '  \n\n Write your answer in multiple choice letter format.) ")
+
+        if userInput0.lower() == "a":
+            print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
+        elif userInput0.lower() == "b":
+            print(f"\n Correct!")
+            score += 1
+        elif userInput0.lower() == "c":
+            print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
+        elif userInput0.lower() == "d":
+            print(f"\n I'm sorry {name}, but this is incorrect. Try again next time.")
+        else: 
+            print(f"\n Make sure {name} you're writing your answer as a letter option (ex: a, b, c, d)")
+        
+        print("\n\n Ok the quiz is finished [for now ;) ]")
+        print(f"\n Here was your total score of correct answers: {score}")
+        print(f" Thanks for playing {name}!")
+
+        score = 0
+
 
 if programToRun == "1.1":
     DifferentReviews.sectionOneOneReview()
