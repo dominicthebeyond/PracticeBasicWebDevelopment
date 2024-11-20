@@ -1,7 +1,8 @@
 // Function to handle form submission
-document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+document.getElementById('newsletter-form').addEventListener('submit', (event) => {
     event.preventDefault(); // Prevents page reload
-    
+
+
     // Capture the email input
     const email = document.getElementById('email').value;
 
@@ -32,6 +33,7 @@ function submitToGoogleSheets(email) {
         body: JSON.stringify({ email: email })
     })
     .then(response => {
+        console.log(response); // For Debugging
         document.getElementById('success-message').style.display = 'block'; // Show success message
         document.getElementById('newsletter-form').reset(); // Clear form
     })
